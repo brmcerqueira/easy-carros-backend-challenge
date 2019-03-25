@@ -1,0 +1,23 @@
+{
+    "environment": "Development",
+    "port": 8080,
+    "mongo": {
+        "host": "10.98.0.140",
+        "port": 27017,
+        "db_name": "backendChallenge"
+    },
+    "auth": {
+        "path": "jwt_keystore.jceks",
+        "password": "easycarros"
+    },
+    "consumeApi": {
+        "googleapis" : {
+            "host": "maps.googleapis.com",
+            "ssl": true,
+            "abs": true,
+            "options": {
+                "key": "AIzaSyAEkjxAslvQMfiqXrKaQRpM-veNBslH2EQ"
+            }
+        }
+    }
+}
