@@ -51,7 +51,7 @@ dependencies {
 tasks.withType<ShadowJar> {
     classifier = "fat"
     manifest {
-        attributes(mapOf("Main-Verticle" to "com.touchpay.presentation.MainVerticle"))
+        attributes(mapOf("Main-Verticle" to "com.easycarros.backendchallenge.presentation.MainVerticle"))
     }
     mergeServiceFiles {
         include("META-INF/services/io.vertx.core.spi.VerticleFactory")
@@ -60,8 +60,8 @@ tasks.withType<ShadowJar> {
 
 tasks.withType<JavaExec> {
     args = listOf(
-            "run",
-            "com.touchpay.presentation.MainVerticle",
-            "--conf=environments/${findProperty("env") ?: "dev"}-conf.json"
+        "run",
+        "com.easycarros.backendchallenge.presentation.MainVerticle",
+        "--conf=environments/${findProperty("env") ?: "dev"}-conf.json"
     )
 }
