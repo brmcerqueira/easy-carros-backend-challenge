@@ -21,6 +21,14 @@ class AttendanceDao @Inject constructor(private val database: Database) {
         if (it.isPresent) it.get() else throw PartnerNotFoundException()
     }
 
+    fun search(lng: Double, lat: Double) = database.genericFind<Partner>("partner", Find {
+        "location" *= {
+            geoWithin {
+                centerSphere(lng, lat, 10.0.km())
+            }
+        }
+    })
+
     /**
      * Função para converter kilometros em radius.
      */

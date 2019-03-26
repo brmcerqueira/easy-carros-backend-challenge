@@ -12,4 +12,8 @@ import javax.inject.Inject
 class AttendanceController @Inject constructor(private val service: AttendanceService) {
     fun request(input: Single<RoutingContext>): Single<RouteResult> =
             input.body<RequestDto>().flatMap(service::request).map(::json)
+
+    fun search(input: Single<RoutingContext>): Single<RouteResult> = input.flatMap {
+        service.search(it.queryParam("address").first())
+    }.map(::json)
 }
