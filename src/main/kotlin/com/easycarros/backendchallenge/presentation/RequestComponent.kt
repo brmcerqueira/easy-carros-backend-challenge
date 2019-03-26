@@ -9,4 +9,5 @@ import dagger.Subcomponent
 interface RequestComponent {
     val translate: Translate
     val authenticationController: AuthenticationController
+    val attendanceController: AttendanceController
 }

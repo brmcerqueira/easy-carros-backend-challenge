@@ -41,7 +41,7 @@ dependencies {
     compile("io.vertx:vertx-mail-client:$vertxVersion")
     compile("org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion")
     compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
-    compile("com.brmcerqueira:kuerongo:1.0.1")
+    compile("com.brmcerqueira:kuerongo:1.0.2")
     compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0")
     compile("com.google.dagger:dagger:2.13")
     kapt("com.google.dagger:dagger-compiler:2.13")

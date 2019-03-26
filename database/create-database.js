@@ -422,234 +422,293 @@ database.credential.insertMany([{
     }
 ]);
 
-database.partner.insertMany([
-    {
-        "_id": "cjsgiytw30000enwg26h7aest",
-        "name": "Suélen Souza",
-        "location": {
-            "lat": -27.6343625,
-            "lng": -48.4542951
-        },
-        "availableServices": [
-            NumberInt(1)
+database.partner.insertMany([{
+    "_id": "cjsgiytw30000enwg26h7aest",
+    "name": "Suélen Souza",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.6343625,
+            -48.4542951
         ]
     },
-    {
-        "_id": "cjsgiytw40001enwgfx7w90kz",
-        "name": "Mércia Oliveira",
-        "location": {
-            "lat": -23.5566759,
-            "lng": -46.6857404
-        },
-        "availableServices": [
-            NumberInt(0),
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw40001enwgfx7w90kz",
+    "name": "Mércia Oliveira",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5566759,
+            -46.6857404
         ]
     },
-    {
-        "_id": "cjsgiytw40002enwg0qwgg512",
-        "name": "Félix Franco",
-        "location": {
-            "lat": -20.4504541,
-            "lng": -54.557574
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(0),
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw40002enwg0qwgg512",
+    "name": "Félix Franco",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -20.4504541,
+            -54.557574
         ]
     },
-    {
-        "_id": "cjsgiytw40003enwgfcx5gsn9",
-        "name": "Feliciano Barros",
-        "location": {
-            "lat": -23.5609048,
-            "lng": -46.6849555
-        },
-        "availableServices": [
-            NumberInt(1),
-            NumberInt(0)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw40003enwgfcx5gsn9",
+    "name": "Feliciano Barros",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5609048,
+            -46.6849555
         ]
     },
-    {
-        "_id": "cjsgiytw40004enwg68ufh5wy",
-        "name": "Fábio Barros",
-        "location": {
-            "lat": -23.5566759,
-            "lng": -46.6857404
-        },
-        "availableServices": [
-            NumberInt(0)
+    "availableServices": [
+        NumberInt(1),
+        NumberInt(0)
+    ]
+},
+{
+    "_id": "cjsgiytw40004enwg68ufh5wy",
+    "name": "Fábio Barros",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5566759,
+            -46.6857404
         ]
     },
-    {
-        "_id": "cjsgiytw40005enwg0pwl3nb9",
-        "name": "Lucas Moreira",
-        "location": {
-            "lat": -25.42778,
-            "lng": -49.27306
-        },
-        "availableServices": [
-            NumberInt(0),
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(0)
+    ]
+},
+{
+    "_id": "cjsgiytw40005enwg0pwl3nb9",
+    "name": "Lucas Moreira",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -25.42778,
+            -49.27306
         ]
     },
-    {
-        "_id": "cjsgiytw40006enwge0ushrqx",
-        "name": "Karla Albuquerque",
-        "location": {
-            "lat": -23.619575,
-            "lng": -46.627023
-        },
-        "availableServices": [
-            NumberInt(0),
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(0),
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw40006enwge0ushrqx",
+    "name": "Karla Albuquerque",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.619575,
+            -46.627023
         ]
     },
-    {
-        "_id": "cjsgiytw50007enwg61mje0qb",
-        "name": "Antônio Franco",
-        "location": {
-            "lat": -3.10194,
-            "lng": -60.025
-        },
-        "availableServices": [
-            NumberInt(1),
-            NumberInt(0)
+    "availableServices": [
+        NumberInt(0),
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw50007enwg61mje0qb",
+    "name": "Antônio Franco",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -3.10194,
+            -60.025
         ]
     },
-    {
-        "_id": "cjsgiytw50008enwgfx8ratik",
-        "name": "Antônio Braga",
-        "location": {
-            "lat": -23.5609048,
-            "lng": -46.6849555
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1),
+        NumberInt(0)
+    ]
+},
+{
+    "_id": "cjsgiytw50008enwgfx8ratik",
+    "name": "Antônio Braga",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5609048,
+            -46.6849555
         ]
     },
-    {
-        "_id": "cjsgiytw50009enwg6ige96b4",
-        "name": "Alessandro Braga",
-        "location": {
-            "lat": -23.5566759,
-            "lng": -46.6857404
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw50009enwg6ige96b4",
+    "name": "Alessandro Braga",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5566759,
+            -46.6857404
         ]
     },
-    {
-        "_id": "cjsgiytw5000aenwgbgxs2r10",
-        "name": "Marcela Xavier",
-        "location": {
-            "lat": -23.725778,
-            "lng": -46.532081
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000aenwgbgxs2r10",
+    "name": "Marcela Xavier",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.725778,
+            -46.532081
         ]
     },
-    {
-        "_id": "cjsgiytw5000benwg83v2h8ll",
-        "name": "Rafael Carvalho",
-        "location": {
-            "lat": -27.5944704,
-            "lng": -48.561893
-        },
-        "availableServices": [
-            NumberInt(0),
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000benwg83v2h8ll",
+    "name": "Rafael Carvalho",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.5944704,
+            -48.561893
         ]
     },
-    {
-        "_id": "cjsgiytw5000cenwg02sph3ih",
-        "name": "Fábio Silva",
-        "location": {
-            "lat": -23.5609048,
-            "lng": -46.6849555
-        },
-        "availableServices": [
-            NumberInt(1),
-            NumberInt(0)
+    "availableServices": [
+        NumberInt(0),
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000cenwg02sph3ih",
+    "name": "Fábio Silva",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5609048,
+            -46.6849555
         ]
     },
-    {
-        "_id": "cjsgiytw5000denwg8wwhg0a1",
-        "name": "Danilo Nogueira",
-        "location": {
-            "lat": -27.5944704,
-            "lng": -48.561893
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1),
+        NumberInt(0)
+    ]
+},
+{
+    "_id": "cjsgiytw5000denwg8wwhg0a1",
+    "name": "Danilo Nogueira",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.5944704,
+            -48.561893
         ]
     },
-    {
-        "_id": "cjsgiytw5000eenwga5xf5akk",
-        "name": "Larissa Costa",
-        "location": {
-            "lat": -23.5566759,
-            "lng": -46.6857404
-        },
-        "availableServices": [
-            NumberInt(1),
-            NumberInt(0)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000eenwga5xf5akk",
+    "name": "Larissa Costa",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5566759,
+            -46.6857404
         ]
     },
-    {
-        "_id": "cjsgiytw5000fenwg8nq02y37",
-        "name": "Paulo Melo",
-        "location": {
-            "lat": -27.5944704,
-            "lng": -48.561893
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1),
+        NumberInt(0)
+    ]
+},
+{
+    "_id": "cjsgiytw5000fenwg8nq02y37",
+    "name": "Paulo Melo",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.5944704,
+            -48.561893
         ]
     },
-    {
-        "_id": "cjsgiytw5000genwg8sy20wfs",
-        "name": "Dalila Macedo",
-        "location": {
-            "lat": -27.5944704,
-            "lng": -48.561893
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000genwg8sy20wfs",
+    "name": "Dalila Macedo",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.5944704,
+            -48.561893
         ]
     },
-    {
-        "_id": "cjsgiytw5000henwgh1yy41o1",
-        "name": "Lorena Xavier",
-        "location": {
-            "lat": -23.5609048,
-            "lng": -46.6849555
-        },
-        "availableServices": [
-            NumberInt(0),
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000henwgh1yy41o1",
+    "name": "Lorena Xavier",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.5609048,
+            -46.6849555
         ]
     },
-    {
-        "_id": "cjsgiytw5000ienwg4qsdednu",
-        "name": "Rafaela Carvalho",
-        "location": {
-            "lat": -27.5944704,
-            "lng": -48.561893
-        },
-        "availableServices": [
-            NumberInt(0)
+    "availableServices": [
+        NumberInt(0),
+        NumberInt(1)
+    ]
+},
+{
+    "_id": "cjsgiytw5000ienwg4qsdednu",
+    "name": "Rafaela Carvalho",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -27.5944704,
+            -48.561893
         ]
     },
-    {
-        "_id": "cjsgiytw5000jenwg8s1nc9qv",
-        "name": "Dalila Martins",
-        "location": {
-            "lat": -23.725778,
-            "lng": -46.532081
-        },
-        "availableServices": [
-            NumberInt(1)
+    "availableServices": [
+        NumberInt(0)
+    ]
+},
+{
+    "_id": "cjsgiytw5000jenwg8s1nc9qv",
+    "name": "Dalila Martins",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -23.725778,
+            -46.532081
         ]
-    }
+    },
+    "availableServices": [
+        NumberInt(1)
+    ]
+}
 ]);

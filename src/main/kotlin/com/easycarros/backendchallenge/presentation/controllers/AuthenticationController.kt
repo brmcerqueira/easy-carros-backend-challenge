@@ -9,7 +9,7 @@ import io.reactivex.Single
 import io.vertx.reactivex.ext.web.RoutingContext
 import javax.inject.Inject
 
-class AuthenticationController @Inject constructor(private val service: com.easycarros.backendchallenge.business.AuthenticationService) {
+class AuthenticationController @Inject constructor(private val service: AuthenticationService) {
     fun signIn(input: Single<RoutingContext>): Single<RouteResult> =
             input.body<SignInDto>().flatMap(service::signIn).map(::json)
 }

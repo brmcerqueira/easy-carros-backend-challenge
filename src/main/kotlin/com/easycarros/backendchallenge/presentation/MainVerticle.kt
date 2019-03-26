@@ -18,6 +18,9 @@ class MainVerticle : AbstractVerticle() {
             }
         }.build {
             post("sign/in") go { authenticationController::signIn }
+            onlyAuthenticated() to {
+                post("attendance/request") go { attendanceController::request }
+            }
         }
     }
 }
