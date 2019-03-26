@@ -428,8 +428,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -27.6343625,
-            -48.4542951
+            -48.4542951,
+            -27.6343625
         ]
     },
     "availableServices": [
@@ -442,8 +442,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5566759,
-            -46.6857404
+            -46.6857404,
+            -23.5566759
         ]
     },
     "availableServices": [
@@ -457,8 +457,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -20.4504541,
-            -54.557574
+            -54.557574,
+            -20.4504541
         ]
     },
     "availableServices": [
@@ -471,8 +471,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5609048,
-            -46.6849555
+            -46.6849555,
+            -23.5609048
         ]
     },
     "availableServices": [
@@ -486,8 +486,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5566759,
-            -46.6857404
+            -46.6857404,
+            -23.5566759
         ]
     },
     "availableServices": [
@@ -500,8 +500,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -25.42778,
-            -49.27306
+            -49.27306,
+            -25.42778
         ]
     },
     "availableServices": [
@@ -515,8 +515,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.619575,
-            -46.627023
+            -46.627023,
+            -23.619575
         ]
     },
     "availableServices": [
@@ -530,8 +530,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -3.10194,
-            -60.025
+            -60.025,
+            -3.10194
         ]
     },
     "availableServices": [
@@ -545,8 +545,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5609048,
-            -46.6849555
+            -46.6849555,
+            -23.5609048
         ]
     },
     "availableServices": [
@@ -559,8 +559,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5566759,
-            -46.6857404
+            -46.6857404,
+            -23.5566759
         ]
     },
     "availableServices": [
@@ -573,8 +573,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.725778,
-            -46.532081
+            -46.532081,
+            -23.725778
         ]
     },
     "availableServices": [
@@ -587,8 +587,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -27.5944704,
-            -48.561893
+            -48.561893,
+            -27.5944704
         ]
     },
     "availableServices": [
@@ -602,8 +602,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5609048,
-            -46.6849555
+            -46.6849555,
+            -23.5609048
         ]
     },
     "availableServices": [
@@ -617,8 +617,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -27.5944704,
-            -48.561893
+            -48.561893,
+            -27.5944704
         ]
     },
     "availableServices": [
@@ -631,8 +631,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5566759,
-            -46.6857404
+            -46.6857404,
+            -23.5566759
         ]
     },
     "availableServices": [
@@ -646,8 +646,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -27.5944704,
-            -48.561893
+            -48.561893,
+            -27.5944704
         ]
     },
     "availableServices": [
@@ -660,8 +660,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -27.5944704,
-            -48.561893
+            -48.561893,
+            -27.5944704
         ]
     },
     "availableServices": [
@@ -674,8 +674,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.5609048,
-            -46.6849555
+            -46.6849555,
+            -23.5609048
         ]
     },
     "availableServices": [
@@ -689,8 +689,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -27.5944704,
-            -48.561893
+            -48.561893,
+            -27.5944704
         ]
     },
     "availableServices": [
@@ -703,8 +703,8 @@ database.partner.insertMany([{
     "location": {
         "type": "Point",
         "coordinates": [
-            -23.725778,
-            -46.532081
+            -46.532081,
+            -23.725778
         ]
     },
     "availableServices": [
