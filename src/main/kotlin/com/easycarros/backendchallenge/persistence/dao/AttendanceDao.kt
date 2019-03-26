@@ -2,6 +2,7 @@ package com.easycarros.backendchallenge.persistence.dao
 
 import com.easycarros.backendchallenge.domain.Partner
 import com.easycarros.backendchallenge.dto.RequestDto
+import com.easycarros.backendchallenge.exceptions.PartnerNotFoundException
 import com.easycarros.backendchallenge.persistence.Database
 import com.easycarros.backendchallenge.persistence.Find
 import javax.inject.Inject
@@ -13,10 +14,15 @@ class AttendanceDao @Inject constructor(private val database: Database) {
         }
         "location" *= {
             geoWithin {
-                centerSphere(dto.lng, dto.lat, 5 / 3963.2)
+                centerSphere(dto.lng, dto.lat, 10.0.km())
             }
         }
     }).map {
-        it.orElseThrow()
+        if (it.isPresent) it.get() else throw PartnerNotFoundException()
     }
+
+    /**
+     * Função para converter kilometros em radius.
+     */
+    private fun Double.km(): Double = this / 6378.1
 }

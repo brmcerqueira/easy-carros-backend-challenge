@@ -20,7 +20,7 @@ class RouteGo(private val presentationComponent: PresentationComponent,
 
     private val authorization = "Authorization"
 
-    private data class Message(val message: String, val show: Boolean = true)
+    private data class Message(val message: String)
     private data class Error(val message: String, val errors: HashSet<String>)
 
     infix fun go(action: RequestComponent.() -> (r: Single<RoutingContext>) -> Single<RouteResult>) {
