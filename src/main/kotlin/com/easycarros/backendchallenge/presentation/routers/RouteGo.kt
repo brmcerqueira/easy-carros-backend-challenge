@@ -52,12 +52,10 @@ class RouteGo(private val presentationComponent: PresentationComponent,
     }
 
     private fun check(routingContext: RoutingContext, requestModule: RequestModule): Single<RoutingContext> {
-        if (routerPermission.onlyAuthenticated || routerPermission.kinds.isNotEmpty() || routerPermission.permissions.isNotEmpty()) {
+        if (routerPermission.onlyAuthenticated) {
             val headers = routingContext.request().headers()
             return if (headers.contains(authorization)) {
-                routerUtils.credentialService.check(headers.get(authorization),
-                    routerPermission.kinds,
-                    routerPermission.permissions).map {
+                routerUtils.credentialService.check(headers.get(authorization)).map {
                     requestModule.credential = it
                     routingContext
                 }.onErrorResumeNext {

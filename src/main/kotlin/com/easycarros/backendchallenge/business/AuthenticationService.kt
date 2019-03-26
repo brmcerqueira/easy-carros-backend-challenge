@@ -10,7 +10,6 @@ import com.easycarros.backendchallenge.persistence.dao.AuthenticationDao
 import io.reactivex.Single
 import io.vertx.core.json.JsonObject
 import io.vertx.reactivex.ext.auth.jwt.JWTAuth
-import org.mindrot.jbcrypt.BCrypt
 import java.time.LocalDateTime
 import java.time.ZoneId
 import javax.inject.Inject
@@ -35,7 +34,7 @@ class AuthenticationService @Inject constructor(validatorBuilder: ValidatorBuild
     fun signIn(dto: SignInDto): Single<String> {
         validatorSignInDto.validate(dto)
         return dao.getCredentialByEmail(dto.email).map {
-            if (!it.isPresent || !BCrypt.checkpw(dto.password, it.get().password)) {
+            if (!it.isPresent || dto.password != it.get().password) {
                 throw SignInException()
             }
 

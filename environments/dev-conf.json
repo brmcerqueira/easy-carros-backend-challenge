@@ -2,9 +2,9 @@
     "environment": "Development",
     "port": 8080,
     "mongo": {
-        "host": "10.98.0.140",
+        "host": "localhost",
         "port": 27017,
-        "db_name": "backendChallenge"
+        "db_name": "easycarros"
     },
     "auth": {
         "path": "jwt_keystore.jceks",

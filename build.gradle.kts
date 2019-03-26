@@ -44,7 +44,6 @@ dependencies {
     compile("com.brmcerqueira:kuerongo:1.0.1")
     compile("com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0")
     compile("com.google.dagger:dagger:2.13")
-    compile("org.mindrot:jbcrypt:0.3m")
     kapt("com.google.dagger:dagger-compiler:2.13")
 }
 

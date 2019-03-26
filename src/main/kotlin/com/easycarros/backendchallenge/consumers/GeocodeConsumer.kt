@@ -1,6 +1,6 @@
 package com.easycarros.backendchallenge.consumers
 
-import com.easycarros.backendchallenge.dto.output.LocationOutputDto
+import com.easycarros.backendchallenge.domain.Location
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -82,7 +82,7 @@ class GeocodeConsumer @Inject constructor(@Named("googleapis") private val consu
     )
 
     private data class GeometryOutputDto(
-        val location: LocationOutputDto
+        val location: Location
     )
 
     fun geocode(address: String) = consume.get<GeocodeOutputDto>("/maps/api/geocode/json?address=$address&key=${consume.options!!.getString("key")}").map {
