@@ -17,6 +17,7 @@ repositories {
     mavenLocal()
     jcenter()
     maven("https://plugins.gradle.org/m2/")
+    maven("https://dl.bintray.com/brmcerqueira/com.brmcerqueira")
 }
 
 sourceSets {
