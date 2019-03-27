@@ -4,7 +4,7 @@ ARG BACK_HOME=/usr/verticles
 ARG BACK_PROJECT=/easy-carros-backend-challenge
 
 ENV VERTICLE_JAR easy-carros-backend-challenge-1.0-SNAPSHOT-fat.jar
-ENV EVR dev
+ENV EVR docker
 
 WORKDIR $BACK_HOME
 
