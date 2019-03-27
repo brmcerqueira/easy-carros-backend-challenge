@@ -2,7 +2,7 @@
     "environment": "Development",
     "port": 8080,
     "mongo": {
-        "host": "localhost",
+        "host": "mongo-database",
         "port": 27017,
         "db_name": "easycarros"
     },

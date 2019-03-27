@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  easycarros:
+    build: .
+    restart: always
+    container_name: easycarros
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: mongo-database
+    ports:
+      - 27017:27017
+    restart: always

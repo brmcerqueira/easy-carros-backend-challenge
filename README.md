@@ -7,6 +7,8 @@ Desafio de backend da easy carros
 
 # Docker
 
+``docker-compose up -d``
+
 ``docker stop easycarros``
 
 ``docker rm easycarros``
