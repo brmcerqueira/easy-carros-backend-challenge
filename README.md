@@ -57,14 +57,16 @@ Se achar necessario podemos observar o log da aplicação com o seguinte comando
 
     * Corpo da requisição:
     
+        * O 'kind' é o Tipo de serviço. (0 = Troca de Oleo, 1 = Lavagem de carro)
+    
         ```json
         {
-          "kind": 0, //Tipo de serviço, 0 = Troca de Oleo, 1 = Lavagem de carro
-          "lat": -23.5609048, //latitude
-          "lng": -46.6849555 //longitude
+          "kind": 0,
+          "lat": -23.5609048,
+          "lng": -46.6849555
         }
         ```
-     * Resposta esperada
+    * Resposta esperada
      
         ```json
          {
@@ -90,76 +92,76 @@ Se achar necessario podemos observar o log da aplicação com o seguinte comando
      
         ```json
             [{
-                    "_id": "cjsgiytw40001enwgfx7w90kz",
-                    "name": "Mércia Oliveira",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6857404, -23.5566759]
-                    },
-                    "availableServices": [0, 1]
+                "_id": "cjsgiytw40001enwgfx7w90kz",
+                "name": "Mércia Oliveira",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6857404, -23.5566759]
+                },
+                "availableServices": [0, 1]
             }, {
-                    "_id": "cjsgiytw40003enwgfcx5gsn9",
-                    "name": "Feliciano Barros",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6849555, -23.5609048]
-                    },
-                    "availableServices": [1, 0]
+                "_id": "cjsgiytw40003enwgfcx5gsn9",
+                "name": "Feliciano Barros",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6849555, -23.5609048]
+                },
+                "availableServices": [1, 0]
             }, {
-                    "_id": "cjsgiytw40004enwg68ufh5wy",
-                    "name": "Fábio Barros",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6857404, -23.5566759]
-                    },
-                    "availableServices": [0]
+                "_id": "cjsgiytw40004enwg68ufh5wy",
+                "name": "Fábio Barros",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6857404, -23.5566759]
+                },
+                "availableServices": [0]
             }, {
-                    "_id": "cjsgiytw40006enwge0ushrqx",
-                    "name": "Karla Albuquerque",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.627023, -23.619575]
-                    },
-                    "availableServices": [0, 1]
+                "_id": "cjsgiytw40006enwge0ushrqx",
+                "name": "Karla Albuquerque",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.627023, -23.619575]
+                },
+                "availableServices": [0, 1]
             }, {
-                    "_id": "cjsgiytw50008enwgfx8ratik",
-                    "name": "Antônio Braga",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6849555, -23.5609048]
-                    },
-                    "availableServices": [1]
+                "_id": "cjsgiytw50008enwgfx8ratik",
+                "name": "Antônio Braga",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6849555, -23.5609048]
+                },
+                "availableServices": [1]
             }, {
-                    "_id": "cjsgiytw50009enwg6ige96b4",
-                    "name": "Alessandro Braga",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6857404, -23.5566759]
-                    },
-                    "availableServices": [1]
+                "_id": "cjsgiytw50009enwg6ige96b4",
+                "name": "Alessandro Braga",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6857404, -23.5566759]
+                },
+                "availableServices": [1]
             }, {
-                    "_id": "cjsgiytw5000cenwg02sph3ih",
-                    "name": "Fábio Silva",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6849555, -23.5609048]
-                    },
-                    "availableServices": [1, 0]
+                "_id": "cjsgiytw5000cenwg02sph3ih",
+                "name": "Fábio Silva",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6849555, -23.5609048]
+                },
+                "availableServices": [1, 0]
             }, {
-                    "_id": "cjsgiytw5000eenwga5xf5akk",
-                    "name": "Larissa Costa",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6857404, -23.5566759]
-                    },
-                    "availableServices": [1, 0]
+                "_id": "cjsgiytw5000eenwga5xf5akk",
+                "name": "Larissa Costa",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6857404, -23.5566759]
+                },
+                "availableServices": [1, 0]
             }, {
-                    "_id": "cjsgiytw5000henwgh1yy41o1",
-                    "name": "Lorena Xavier",
-                    "location": {
-                            "type": "Point",
-                            "coordinates": [-46.6849555, -23.5609048]
-                    },
-                    "availableServices": [0, 1]
+                "_id": "cjsgiytw5000henwgh1yy41o1",
+                "name": "Lorena Xavier",
+                "location": {
+                    "type": "Point",
+                    "coordinates": [-46.6849555, -23.5609048]
+                },
+                "availableServices": [0, 1]
             }]
          ```
