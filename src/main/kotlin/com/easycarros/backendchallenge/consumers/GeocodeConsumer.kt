@@ -7,22 +7,25 @@ import java.util.*
 import javax.inject.Inject
 import javax.inject.Named
 
-class GeocodeConsumer @Inject constructor(@Named("googleapis") private val consume: ConsumeApi){
+class GeocodeConsumer @Inject constructor(@Named("geocode") private val consume: ConsumeApi){
     private data class GeocodeOutputDto(
-        val results: Array<ResultOutputDto>
+        val longt: Double,
+        val latt: Double,
+        val error: ErrorOutputDto?
     )
 
-    private data class ResultOutputDto(
-        val geometry: GeometryOutputDto
-    )
-
-    private data class GeometryOutputDto(
-        val location: LocationOutputDto
+    private data class ErrorOutputDto(
+        val description: String,
+        val code: String
     )
 
     fun geocode(address: String): Single<Optional<LocationOutputDto>> =
-            consume.get<GeocodeOutputDto>("/maps/api/geocode/json?address=$address&key=${URLEncoder.encode(consume.options!!.getString("key"), "UTF-8")}").map {
-        if (it.results.isNotEmpty()) Optional.of(it.results.first().geometry.location)
-        Optional.empty<LocationOutputDto>()
+            consume.get<GeocodeOutputDto>("/${URLEncoder.encode(address, "UTF-8")}?json=1&auth=${consume.options!!.getString("auth")}").map {
+        if (it.error == null) Optional.of(LocationOutputDto(
+            lat =  it.latt,
+            lng = it.longt
+        )) else Optional.empty()
+    }.onErrorResumeNext {
+        Single.just(Optional.empty())
     }
 }

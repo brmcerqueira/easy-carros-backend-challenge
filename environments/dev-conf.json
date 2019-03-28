@@ -11,12 +11,12 @@
         "password": "easycarros"
     },
     "consumeApi": {
-        "googleapis" : {
-            "host": "maps.googleapis.com",
+        "geocode" : {
+            "host": "geocode.xyz",
             "ssl": true,
             "abs": true,
             "options": {
-                "key": "AIzaSyAEkjxAslvQMfiqXrKaQRpM-veNBslH2EQ"
+                "auth": "365186944604550916301x2062"
             }
         }
     }

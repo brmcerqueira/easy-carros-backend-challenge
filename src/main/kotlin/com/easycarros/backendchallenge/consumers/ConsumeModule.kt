@@ -18,9 +18,9 @@ class ConsumeModule {
 
     @Provides
     @Singleton
-    @Named("googleapis")
+    @Named("geocode")
     fun provideGeocodeConsumeApi(vertx: Vertx, consumeObjectMapperManager: ConsumeObjectMapperManager, @Named("config") config: JsonObject, @Named("consume") auditor: Auditor): ConsumeApi {
-        val key = "googleapis"
+        val key = "geocode"
         val consumeApiJsonObject = config.getJsonObject("consumeApi").getJsonObject(key)
         return ConsumeApi(WebClient.create(vertx),
                 consumeObjectMapperManager[key],
